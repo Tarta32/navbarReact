@@ -1,0 +1,74 @@
+.navbar{
+    margin: 80px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: chocolate;
+}
+
+.navbar>div{
+    margin: auto 0;
+}
+
+.navbar>div>a{
+    margin: 0 20px;
+}
+
+.burger p{
+    font-size: 50px;
+    margin: -20px 0;
+}
+
+.burger{
+    display: none;
+    color: rgb(211, 208, 35);
+    font-weight: 800;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(211, 208, 35);
+}
+
+h1{
+    color: rgb(211, 208, 35);
+}
+
+
+
+
+@media all and (max-width: 600px){
+
+.liens{
+    position: fixed;
+    top: 185px;
+    right: 88px; 
+    display: flex;
+    flex-direction: column;
+    transition: 1s linear ;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: chocolate;
+    z-index: 20;    
+}
+
+.liens a{
+    margin: 20px !important;
+}
+
+.ferme{
+    right: -100%;
+    transition: 1s linear ;
+}
+
+.burger{
+    display: flex;
+}
+
+.burger:hover{
+    cursor: pointer;
+}
+}
